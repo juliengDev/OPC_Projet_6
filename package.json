@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "lint": "eslint --max-warnings=0 ."
+  },
+  "gitHooks": {
+    "pre-push": "npm run lint"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.34.0",
+    "yorkie": "^2.0.0"
+  }
+}

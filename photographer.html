@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/photographer.css">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ac15f4689e.js" crossorigin="anonymous"></script>
+    <title>Fisheye - photographe </title>
+  </head>
+  <body>
+    <header role="banner" aria-label="En tête de la page photographe" id="header">
+      <span tabindex="0"><a lang="en" href="./index.html"><img src="assets/images/logo.png" class="logo" alt="Fisheye Home page"></a></span>
+    </header>
+    <main id="main-wrapper" role="main" aria-label="Contenu de la page principale de la page photographe">       
+      <div class="photograph-header">             
+      </div>
+      <div class="container-counter" tabindex="0">
+        <div id="totalLikes" class="total_likes">
+          <h3 id="number" class="number"></h3>
+          <i id="heart" class="fa-solid fa-heart"></i> 
+        </div>
+        <h3 id="price" class="counter-price"></h3>     
+      </div> 
+      <div id="contact_modal">
+        <div class="modal">				
+        </div>
+      </div>
+      <div class="media-dropdown images__sorter">
+        <label for="media-filter" class="label" tabindex="0">Trier par</label>
+        <div class="custom-select images__select-container">
+  
+          <div class="dropdown-menu__icon-container active-sort-button-icon">
+            <i class="fa-xs fa-solid fa-chevron-down dropdown-menu__icon"></i>
+          </div>
+  
+          <select name="orderby" class="select select--mobile-only"  id="media-filter">
+            <option class="option" value="Popularite">Popularité</option>
+            <option class="option" value="Date">Date</option>
+            <option class="option" value="Titre">Titre</option>
+          </select>
+  
+          <button id="buttonDropDown" class="dropdown-menu__sort-button" type="button" role="button"
+          aria-expanded="false" aria-haspopup="listbox">Popularité</button>
+  
+          <div id="dropdown-menu" class="dropdown-menu hide" aria-haspopup="true" role="listbox">
+            <ul class="dropdown-menu_list">
+              <li class="dropdown-menu_list-item" role="option" id="popularity">
+                <a aria-label="Popularité" href="#">Popularité</a>
+              </li>
+              <li class="dropdown-menu_list-item" role="option" id="date" >
+                <a aria-label="Date" href="#">Date</a>
+              </li>
+              <li class="dropdown-menu_list-item" role="option" id="title">
+                <a aria-label="Titre" href="#">Titre</a>
+              </li>
+            </ul>
+          </div>
+  
+      </div>     
+      </div>     
+      <section class="media"> 
+      </section>
+      <div id="lightbox2" aria-label="image closeup view" lang="en">
+        <i id="xmark2" class="xmark fa-sharp fa-solid fa-xmark fa-2xl" tabindex="0"></i>
+        <div class="lightbox-container" tabindex="0">
+          <i id='l2' class="fa-sharp fa-solid fa-arrow-left fa-2xl" tabindex="0"></i>
+          <div id="media-container2">
+            <div id="video-container2">              
+                <video class="video" id="videoLightbox" controls></video>              
+                <p class="picture-name" id="titreVideoLightbox"></p>              
+            </div>
+            <div id="img-container2">                            
+                <img  class="img" id="imgLightbox" src="#" alt="#">
+                <p class="picture-name" id="titreImgLightbox"></p>              
+            </div>                   
+          </div>        
+          <i id='r2' class="fa-sharp fa-solid fa-arrow-right fa-2xl" tabindex="0"></i>         
+        </div>      
+      </div>
+    </main>   
+    <script src="./scripts/pages/photographer.js" type="module"></script>
+  </body>
+</html>
+ 
